@@ -17,5 +17,5 @@ public class EmployeeStoreRO implements Serializable{
     private static final long serialVersionUID = 8097156630966387461L;
 
     private String name;
-    private String age;
+    private Integer age;
 }

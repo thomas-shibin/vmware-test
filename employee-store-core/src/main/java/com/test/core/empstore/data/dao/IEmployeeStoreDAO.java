@@ -26,4 +26,6 @@ public interface IEmployeeStoreDAO extends CrudRepository<EmployeeStore, Integer
             "on (emp.NAME = emp1.NAME and emp.FILE_TIMESTAMP = emp1.FILE_GENERATED_TIME) " +
             " where wp.name = ?1", nativeQuery = true)
     IEmployeeQO getEmployeeByName(String name);
+
+    EmployeeStore findFirstByNameOrderByFileTimestampDesc(String name);
 }
