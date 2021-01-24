@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.test.core</groupId>
-	<artifactId>empstore</artifactId>
+	<artifactId>employee-store</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>empstore</name>
+	<name>employee-store</name>
 	<description>Employee Store</description>
 	<properties>
 		<java.version>1.8</java.version>
@@ -75,6 +75,11 @@
 			<artifactId>validation-api</artifactId>
 			<version>2.0.1.Final</version>
 		</dependency>
+		<dependency>
+			<groupId>org.liquibase</groupId>
+			<artifactId>liquibase-core</artifactId>
+			<version>4.2.0</version>
+		</dependency>
 
 	</dependencies>
 
@@ -93,6 +98,7 @@
 				</configuration>
 			</plugin>
 		</plugins>
+		<finalName>employee-store</finalName>
 	</build>
 
 </project>
